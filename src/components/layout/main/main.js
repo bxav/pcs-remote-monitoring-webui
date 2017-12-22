@@ -39,7 +39,7 @@ class Main extends Component {
     return (
       <div className="main-container">
         <LeftNav onClick={this.props.actions.hideFlyout} />
-        <div className="main-content-container">
+        <div className="main-content-container" onClick={this.props.actions.hideFlyout}>
           {this.props.children}
         </div>
         <Flyout {...flyoutProp} />
